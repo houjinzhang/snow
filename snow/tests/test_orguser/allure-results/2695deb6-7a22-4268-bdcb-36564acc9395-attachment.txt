@@ -1,0 +1,5 @@
+正在查找 'details-button'
+已点击 'details-button'
+正在查找 'proceed-link'
+已点击 'proceed-link'
+登录成功

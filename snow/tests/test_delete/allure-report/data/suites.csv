@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11342","test_case_1","tests.test_delete","Wed Jun 04 14:42:58 CST 2025","passed","Wed Jun 04 14:43:09 CST 2025","","test_case_1","",""

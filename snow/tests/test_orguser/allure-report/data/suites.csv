@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"更新用户状态（部门）","12813","更新用户状态（部门）","tests.test_orguser","Tue Jun 03 16:11:19 CST 2025","passed","Tue Jun 03 16:11:32 CST 2025","","test_upuser","",""
+"测试用户添加功能","6519","测试用户添加流程","tests.test_orguser","Tue Jun 03 16:11:07 CST 2025","passed","Tue Jun 03 16:11:14 CST 2025","","test_user","",""
+"测试登录功能","2984","登录测试","tests.test_orguser","Tue Jun 03 16:10:45 CST 2025","passed","Tue Jun 03 16:10:48 CST 2025","","test_login","",""
+"测试添加部门功能流程","8397","测试添加部门功能流程","tests.test_orguser","Tue Jun 03 16:10:54 CST 2025","passed","Tue Jun 03 16:11:02 CST 2025","","test_orgstr","",""
