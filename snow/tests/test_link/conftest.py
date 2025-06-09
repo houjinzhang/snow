@@ -51,10 +51,10 @@ def login(driver):
 
     # 输入账号密码并登录
     WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号"]'))
+        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]'))
     )
 
-    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号"]').send_keys("13332386332")
+    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]').send_keys("13332386332")
     driver.find_element(By.XPATH, '//input[@placeholder="请输入密码"]').send_keys("PxCeadN5ac")
     driver.find_element(By.XPATH, '//button[@type="submit"]').click()
 

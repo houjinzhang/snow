@@ -45,12 +45,13 @@ def test_login(driver):
     print("已点击 'proceed-link'")
     # 使用 XPath 根据 placeholder 定位元素
     WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号"]'))
+        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]'))
     )
     # 输入账号密码
-    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号"]').send_keys("13332386332")
+    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]').send_keys("13332386332")
     driver.find_element(By.XPATH, '//input[@placeholder="请输入密码"]').send_keys("PxCeadN5ac")
     # 点击登录按钮
     driver.find_element(By.XPATH, '//button[@type="submit"]').click()
     print("登录成功")
     time.sleep(1)
+    

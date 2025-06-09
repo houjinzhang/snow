@@ -50,10 +50,10 @@ def login(driver):
 
     # 输入账号密码并登录
     WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号"]'))
+        EC.presence_of_element_located((By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]'))
     )
 
-    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号"]').send_keys("13332386332")
+    driver.find_element(By.XPATH, '//input[@placeholder="请输入手机号/邮箱"]').send_keys("13332386332")
     driver.find_element(By.XPATH, '//input[@placeholder="请输入密码"]').send_keys("PxCeadN5ac")
     driver.find_element(By.XPATH, '//button[@type="submit"]').click()
 
@@ -91,5 +91,17 @@ def click_element_by_text(driver, tag_name, text, timeout=10):
                       attachment_type=allure.attachment_type.PNG)
         print(f"点击 {text} 失败: {e}")
         return False
+#强制点击输入内容
+def set_input_value(driver, element, value):
+        """
+        使用 JavaScript 设置输入框的值，并触发 input 事件
+        """
+        driver.execute_script("arguments[0].focus();", element)
+        element.clear()
+        driver.execute_script("""
+            arguments[0].value = arguments[1];
+            var event = new Event('input', { bubbles: true });
+            arguments[0].dispatchEvent(event);
+        """, element, value)
 
 
